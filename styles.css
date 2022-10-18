@@ -1,0 +1,109 @@
+:root{
+    --orange: hsl(31, 77%, 52%);
+    --cyan: hsl(184, 100%, 22%);
+    --dark-cyan: hsl(179, 100%, 13%);
+    --light-text-gray: hsl(0, 0%, 95%);
+    --transparent-white: hsla(0, 0%, 100%, 0.75);
+}
+body{
+    margin: 0 auto;
+    font-family: 'Lexend Deca', sans-serif;
+    background: var(--light-text-gray);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+h1{
+    font-family: 'Big Shoulders Display', cursive;
+    font-weight: 700;
+    color: var(--light-text-gray);
+    font-size: 35px;
+    margin: 0;
+    margin-bottom: 15%;
+}
+p{
+    font-size: 15px;
+    color: var(--transparent-white);
+    margin-bottom: 35%;
+    width: 87%;
+    line-height: 1.6;
+}
+.container{
+    display: flex;
+    border-radius: 10px;
+    height: 450px;
+}
+.sedans{
+    background: var(--orange);
+    border-radius: 5px 0 0 5px;
+    max-width: 300px;
+}
+.sedans button{
+    margin: 0 auto;
+}
+.suvs{
+    background: var(--cyan);
+    width: 300px;
+}
+.luxury{
+    background: var(--dark-cyan);
+    border-radius: 0 5px 5px 0;
+    width: 300px;
+}
+.learnMore{
+    background: var(--light-text-gray);
+    border: none;
+    border-radius: 15px;
+    padding: 8px 18px;
+    font-family: 'Lexend Deca', sans-serif;
+    font-size: 15px;
+    border: 2px var(--light-text-gray) solid;
+}
+/* .suvs .learnMore{
+    
+} */
+.sedans .learnMore{
+    color: var(--orange);
+}
+.suvs{
+    color: var(--cyan);
+}
+.luxury{
+    color: var(--dark-cyan);
+}
+.inner{
+    margin: 0 auto;
+    width: 80%;
+    padding: 10%;
+}
+.inner img{
+    margin-bottom: 5%;
+}
+.suvs .learnMore:active{
+    background-color: var(--cyan);
+    cursor: pointer;
+    color: var(--light-text-gray);
+}
+.luxury .learnMore:active{
+    background-color: var(--dark-cyan);
+    cursor: pointer;
+    color: var(--light-text-gray);
+}
+.sedans .learnMore:active{
+    background-color: var(--orange);
+    cursor: pointer;
+    color: var(--light-text-gray);
+}
+@media only screen and (max-width: 376px){
+    body{
+        align-items: baseline;
+    }
+    .container {
+        display: block;
+    }
+    p {
+        margin-bottom: 12%;
+        width: 95%;
+    }
+}
